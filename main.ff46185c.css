@@ -4716,8 +4716,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url("/fa-brands-400.fdfe395a.eot");
-  src: url("/fa-brands-400.fdfe395a.eot?#iefix") format("embedded-opentype"), url("/fa-brands-400.d8fd1f09.woff2") format("woff2"), url("/fa-brands-400.83e55726.woff") format("woff"), url("/fa-brands-400.b28b6f6e.ttf") format("truetype"), url("/fa-brands-400.2cc1c9e1.svg#fontawesome") format("svg"); }
+  src: url("./fa-brands-400.d8fd1f09.woff2") format("woff2"), url("./fa-brands-400.83e55726.woff") format("woff")}
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -4726,8 +4725,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url("/fa-regular-400.169b078d.eot");
-  src: url("/fa-regular-400.169b078d.eot?#iefix") format("embedded-opentype"), url("/fa-regular-400.57fa45d8.woff2") format("woff2"), url("/fa-regular-400.838ff4ef.woff") format("woff"), url("/fa-regular-400.e21dec3b.ttf") format("truetype"), url("/fa-regular-400.6d37bf45.svg#fontawesome") format("svg"); }
+  src: url("./fa-regular-400.57fa45d8.woff2") format("woff2"), url("./fa-regular-400.838ff4ef.woff") format("woff") }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -4737,8 +4735,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url("/fa-solid-900.2419300f.eot");
-  src: url("/fa-solid-900.2419300f.eot?#iefix") format("embedded-opentype"), url("/fa-solid-900.2d1e16b4.woff2") format("woff2"), url("/fa-solid-900.4e803835.woff") format("woff"), url("/fa-solid-900.b73c1002.ttf") format("truetype"), url("/fa-solid-900.1f78f563.svg#fontawesome") format("svg"); }
+	src: url("./fa-solid-900.2d1e16b4.woff2") format("woff2"), url("./fa-solid-900.4e803835.woff") format("woff")
+}
 
 .fa,
 .fas {
@@ -5180,7 +5178,7 @@ input {
   height: 56.25rem;
   overflow: hidden;
   padding-top: 5rem;
-  background: url("/hero.0e03aae8.jpg") center top/cover;
+  background: url("./hero.0e03aae8.jpg") center top/cover;
   font-weight: 300;
 }
 .hero::after {
@@ -5315,7 +5313,7 @@ input {
 .music {
   position: relative;
   min-height: 56.25rem;
-  background: url("/music.6eba5ec4.jpg") no-repeat center/cover;
+  background: url("./music.6eba5ec4.jpg") no-repeat center/cover;
 }
 @media (min-width: 768px) {
   .music {
