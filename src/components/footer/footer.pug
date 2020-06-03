@@ -1,0 +1,42 @@
+include ../container/container
+
+mixin footer()
+	footer.footer
+		+container('footer__container')
+			.footer__column.footer__column--amazing
+				.footer__description
+					.footer__title AMAZING DUDE.<br> AMAZING LIFE.
+					.footer__text
+						p Mauris ornare lobortis arcu, at sodales dolor finibus nec. In convallis risus ligula, bibendum sagittis ante cursus vitae. Donec ornare, dui nec sagittis imperdiet, nunc eros dignissim augue, ut aliquam nibh felis sit amet leo. Vivamus eu tincidunt tellus. Vestibulum quis condimentum lectus, nec aliquet lectus. Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. Phasellus in scelerisque elit, eu ultricies mauris.
+						p.footer__copyright #[i.far.fa-copyright]2015. all rights reserved.
+			.footer__column.footer__column--conect
+				.footer__description
+					.footer__title CONTACT ME
+					.footer__text
+						p 1242 Crestview Terrace <br> Artesia Wells, TX 78001
+						p Phone: #[a.footer__link(href='tel:8306767974') 830-676-7974] <br> Email: #[a.footer__link(href='mailto:halo@sitename.com') halo@sitename.com]
+				.footer__description
+					.footer__title FOLLOW ME ON
+					.footer__text
+						ul.footer__social
+							li #[a(href='https://ru-ru.facebook.com/' target='_blank')] #[i.fab.fa-facebook-f] Facebook
+							li #[a(href='https://twitter.com/' target='_blank')] #[i.fab.fa-twitter] TWITTER
+							li #[a(href='https://www.instagram.com/' target='_blank')] #[i.fab.fa-instagram] INSTAGRAM
+							li #[a(href='https://www.spotify.com/' target='_blank')] #[i.fab.fa-spotify] SPOTIFY
+			.footer__column.footer__column--subscribe
+				.footer__description.footer__description--subscribe
+					.footer__title SUBSCRIBE
+					.footer__text Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque.
+					form.footer__email(action="/")
+						input(type='email' placeholder='ENTER YOUR EMAIL ADDRESS' required)
+						button.footer__submin
+							i.fas.fa-arrow-right
+				.footer__description
+					.footer__title.footer__title--sponsor Sponsor
+					.footer__sponsors
+						.footer__sponsor
+							.footer__logo Logo
+						.footer__sponsor
+							.footer__logo Logo
+						.footer__sponsor
+							.footer__logo Logo

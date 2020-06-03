@@ -1,0 +1,13 @@
+$parent: text;
+
+.#{$parent} {
+	font-weight: 300;
+	font-size: rem(36);
+	line-height: normal;
+	letter-spacing: rem(-0.9);
+	color: $color-wet;
+
+	&--white {
+		color: $color-white;
+	}
+}

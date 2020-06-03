@@ -1,0 +1,29 @@
+$parent: menu-burger;
+
+.#{$parent} {
+	margin-right: rem(22);
+	text-align: center;
+	cursor: pointer;
+	pointer-events: all;
+
+	&__icon {
+		margin-bottom: rem(10);
+
+		span {
+			display: block;
+			width: rem(25);
+			height: 4px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: $color-black;
+
+			&:not(:last-of-type) {
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	&__title {
+		font-size: rem(12);
+	}
+}

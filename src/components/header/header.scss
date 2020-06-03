@@ -1,0 +1,21 @@
+$parent: header;
+
+.#{$parent} {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+	padding-top: rem(45);
+	pointer-events: none;
+
+	@media (min-width: $device-lg) {
+		padding-top: rem(90);
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+}

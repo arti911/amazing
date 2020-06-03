@@ -1,0 +1,14 @@
+$parent: logo;
+
+.#{$parent} {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: rem(80);
+	height: rem(80);
+	background-color: $color-black;
+	color: $color-white;
+	font-weight: 800;
+	font-size: rem(60);
+	pointer-events: all;
+}

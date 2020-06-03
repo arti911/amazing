@@ -1,0 +1,59 @@
+$parent: platform;
+
+.#{$parent} {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		flex-basis: 100%;
+		padding: rem(70) rem(15) rem(85);
+		background-color: $color-dark;
+
+		@media (min-width: $device-lg) {
+			flex-basis: 50%;
+			padding: rem(135) rem(60) rem(145);
+		}
+
+		&--right {
+			@media (min-width: $device-lg) {
+				display: flex;
+				justify-content: flex-end;
+				padding-right: rem(90);
+			}
+		}
+
+		&--green {
+			background-color: $color-green;
+		}
+	}
+
+	&__content {
+		width: 100%;
+		text-align: center;
+
+		@media (min-width: $device-lg) {
+			max-width: rem(500);
+			text-align: left;
+		}
+	}
+
+	&__text {
+		margin-bottom: rem(38);
+	}
+
+	&__button {
+		&:hover {
+			@media (min-width: $device-lg) {
+				color: $color-dark;
+			}
+		}
+
+		&--green {
+			&:hover {
+				@media (min-width: $device-lg) {
+					color: $color-green;
+				}
+			}	
+		}
+	}
+}

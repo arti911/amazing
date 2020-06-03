@@ -1,0 +1,14 @@
+include ../../components/title/title
+include ../../components/button/button
+
+mixin music()
+	.music(data-section='music')
+		.music__creators
+			+title('Self-Effacing Rage', 'title--green music__title')
+			.music__text FT. Fascinating Collision
+			ul.music__list
+					li Director: James G. Rohrer
+					li Production Company: Sycamore
+					li Producer: Laura S. Carlton
+					li Executive Producer: Jack M. Heckart
+			+button('button', 'click to play', '', 'button--green button--small', 'fas fa-play')

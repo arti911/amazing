@@ -1,0 +1,49 @@
+$parent: button;
+
+.#{$parent} {
+	display: inline-block;
+	height: 54px;
+	padding: 0 rem(25);
+	border: 2px solid $color-white;
+	color: $color-white;
+	font-weight: 700;
+	font-size: rem(18);
+	line-height: 52px;
+	letter-spacing: 3.5px;
+	text-transform: uppercase;
+	border-radius: 30px;
+	transition: background-color 0.2s, color 0.2s;
+	cursor: pointer;
+
+	i {
+		margin-right: 2px;
+		margin-left: 7px;
+    font-size: rem(16);
+	}
+
+	&:hover {
+		@media (min-width: $device-lg) {
+			background-color: $color-white;
+		}
+	}
+
+	&--green {
+		border-color: $color-green;
+		color: $color-green;
+		background-color: transparent;
+
+		&:hover {
+			@media (min-width: $device-lg) {
+				color: $color-white;
+				background-color: $color-green;
+			}
+		}
+	}
+
+	&--small {
+		height: rem(49);
+		padding: 0 rem(15);
+		line-height: rem(47);
+    letter-spacing: 0;
+	}
+}

@@ -1,0 +1,39 @@
+{
+  "name": "amazing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/pages/index.pug --open",
+    "build": "parcel build src/pages/index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/arti__911/ais.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/arti__911/ais/issues"
+  },
+  "homepage": "https://gitlab.com/arti__911/ais#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2",
+    "pug": "^2.0.4",
+    "sass": "^1.22.9"
+  },
+  "dependencies": {
+    "@prettier/plugin-pug": "^1.0.0-alpha.11",
+    "normalize.css": "^8.0.1",
+    "@fortawesome/fontawesome-free": "^5.10.1"
+  }
+}

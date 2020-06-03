@@ -1,0 +1,17 @@
+$parent: title;
+
+.#{$parent} {
+	margin-bottom: rem(30);
+	font-weight: 700;
+	font-size: rem(24);
+	text-transform: uppercase;
+	color: $color-wet;
+
+	&--white {
+		color: $color-white;
+	}
+
+	&--green {
+		color: $color-green;
+	}
+}

@@ -1,0 +1,7 @@
+mixin gallery()
+	- var images = [{ img: 'gallery_1' }, { img: 'gallery_2' }, { img: 'gallery_3' }, { img: 'gallery_4' }, { img: 'gallery_5', class: 'gallery__item--show' }]
+
+	.gallery(data-section='gallery')
+		each img in images
+			.gallery__item(class=img.class)
+				img(src='../resources/images/' + img.img + '.jpg' alt='photo')

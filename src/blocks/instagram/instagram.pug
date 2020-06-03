@@ -1,0 +1,15 @@
+include ../../components/container/container
+include ../../components/title/title
+include ../../components/text/text
+include ../../components/button/button
+
+mixin instagram()
+	.instagram
+		+container('instagram__container')
+			.instagram__column
+				.instagram__content
+					+title('INSTAGRAM', 'title--white')
+					+text('Etiam lacus dolor, tincidunt vitae nisi in, vulputate placerat odio. Pellentesque iaculis.', 'text--white instagram__text')
+					+button('a', 'VIEW ON INSTAGRAM', 'https://www.instagram.com/', 'instagram__button')
+			.instagram__img
+				img(src='../resources/images/gallery_5.jpg' alt='photo')

@@ -1,0 +1,36 @@
+$parent: about;
+
+.#{$parent} {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__column {
+		flex-basis: 100%;
+		flex-shrink: 0;
+
+		@media (min-width: $device-lg) {
+			flex-basis: 50%;
+		}
+
+		&--vertical-align {
+			padding: rem(70) rem(15) rem(85);
+
+			@media (min-width: $device-lg) {
+				padding: rem(108) 0 rem(115);
+			}
+		}
+
+		img {
+			max-height: rem(500);
+		}
+	}
+
+	&__content {
+		width: 100%;
+
+		@media (min-width: $device-lg) {
+			max-width: rem(550);
+			padding-left: rem(57);
+		}
+	}
+}

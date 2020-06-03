@@ -1,0 +1,7 @@
+mixin button(tag, text, link, className, icon)
+	if (tag === 'a')
+		a.button(href=link target='_blank' class=className)= text
+	else
+		button.button(class=className)
+			| #{text}
+			i(class=icon)

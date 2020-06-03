@@ -1,0 +1,16 @@
+include ../../components/title/title
+include ../../components/text/text
+include ../../components/button/button
+
+mixin platform()
+	.platform
+		.platform__item.platform__item--right.platform__item--green
+			.platform__content
+				+title('SPOTIFY', 'title--white')
+				+text('Follow me, stream and add  my songs to your Spotify playlist.', 'text--white platform__text')
+				+button('a', 'FOLLOW ON SPOTIFY', 'https://www.spotify.com/int/why-not-available/', 'platform__button platform__button--green')
+		.platform__item
+			.platform__content
+				+title('ITUNES', 'title--white')
+				+text('Buy and download my songs from iTunes.', 'text--white platform__text')
+				+button('a', 'buy from itunes', 'https://www.apple.com/ru/itunes/', 'platform__button')

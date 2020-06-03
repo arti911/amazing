@@ -1,0 +1,11 @@
+include ../../components/container/container.pug
+
+mixin hero()
+	.hero(data-section='hero')
+		+container('hero__container')
+			.hero__title
+				span Amazing Dude.
+				span Amazing Life.
+			.hero__text
+				span Welcome to the personal site of #[strong John Doe].
+				span A professional skier and a musician.	

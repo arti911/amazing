@@ -1,0 +1,14 @@
+include ../container/container
+
+mixin menu()
+	.menu
+		+container('menu__container')
+			ul.menu__list
+				li.menu__item 
+					button.menu__btn(data-link='hero') Hero
+				li.menu__item 
+					button.menu__btn(data-link='about') About
+				li.menu__item
+					button.menu__btn(data-link='gallery') Gallery 
+				li.menu__item
+					button.menu__btn(data-link='music') Music

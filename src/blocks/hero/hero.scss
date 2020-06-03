@@ -1,0 +1,50 @@
+$parent: hero;
+
+.#{$parent} {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: rem(900);
+	overflow: hidden;
+	padding-top: rem(80);
+	background: url('./resources/images/hero.jpg') center top / cover;
+	font-weight: 300;
+
+	&::after {
+		content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 2260px;
+		height: 2260px;
+		transform: translateX(-32.5%) rotate(51.5deg);
+    background: rgba($color-azure-dark, 0.3);
+	}
+
+	&__title {
+		margin-bottom: rem(25);
+		font-size: rem(72);
+		letter-spacing: rem(-1.6);
+
+		span {
+			display: block;
+		}
+	}
+
+	&__text {
+		font-size: rem(30);
+		letter-spacing: rem(-0.7);
+
+		strong {
+			font-weight: 600;
+		}
+
+		span {
+			display: block;
+
+			&:not(:last-of-type) {
+				margin-bottom: rem(10);
+			}
+		}
+	}
+}

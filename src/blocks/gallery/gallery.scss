@@ -1,0 +1,21 @@
+$parent: gallery;
+
+.#{$parent} {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		flex-basis: 20%;
+		max-height: rem(515);
+
+		@media (min-width: $device-lg) {
+			flex-basis: 25%;
+		}
+
+		&--show {
+			@media (min-width: $device-lg) {
+				display: none;
+			}
+		}
+	}
+}

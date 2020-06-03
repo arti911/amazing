@@ -1,0 +1,50 @@
+$parent: instagram;
+
+.#{$parent} {
+	background-color: $color-blue;
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__column {
+		display: inline-block;
+    flex-basis: 100%;
+		padding: rem(70) 0 rem(85);
+
+		@media (min-width: $device-lg) {
+			flex-basis: 50%;
+			padding: rem(118) 0 rem(119);
+		}
+	}
+
+	&__content {
+		width: 100%;
+
+		@media (min-width: $device-lg) {
+			max-width: rem(500);
+		}
+	}
+
+	&__text {
+		margin-bottom: rem(34);
+	}
+
+	&__button {
+		&:hover {
+			@media (min-width: $device-lg) {
+				color: $color-blue;
+			}
+		}
+	}
+
+	&__img {
+		display: none;
+		max-height: rem(515);
+
+		@media (min-width: $device-lg) {
+			display: block;
+		}
+	}
+}

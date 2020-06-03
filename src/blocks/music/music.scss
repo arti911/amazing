@@ -1,0 +1,54 @@
+$parent: music;
+
+.#{$parent} {
+	position: relative;
+	min-height: rem(900);
+	background: url('./resources/images/music.jpg') no-repeat center / cover;
+
+	@media (min-width: $device-md) {
+		padding-left: 25%;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 25%;
+		height: 100%;
+		background-color: $color-dark;
+
+		@media (min-width: $device-md) {
+			content: '';	
+		}
+	}
+
+	&__creators {
+		width: 100%;
+		padding: rem(70) rem(15) rem(85);
+		background-color: $color-dark-0;
+
+		@media (min-width: $device-md) {
+			max-width: rem(400);
+			padding: rem(136) rem(59) rem(94);
+		}
+	}
+
+	&__title {
+		margin-bottom: rem(11);
+	}
+
+	&__text {
+		margin-bottom: rem(32);
+		font-size: rem(18);
+		color: $color-green;
+		text-transform: uppercase;
+	}
+
+	&__list {
+		margin-bottom: rem(46);
+		margin-left: rem(-1);
+		font-size: rem(14);
+    line-height: rem(21);
+		color: $color-white;
+	}
+}

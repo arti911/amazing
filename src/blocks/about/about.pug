@@ -1,0 +1,11 @@
+include ../../components/title/title
+include ../../components/text/text
+
+mixin about()
+	.about(data-section='about')
+		.about__column
+			img.about__photo(src='../resources/images/about_photo.jpg' alt='photo')
+		.about__column.about__column--vertical-align
+			.about__content
+				+title('Sed faucibus quis')
+				+text('Fusce bibendum luctus massa, ut tincidunt lectus tincidunt in. Nulla tristique ipsum vitae lacus ullamcorper, at dictum nunc scelerisque.')
