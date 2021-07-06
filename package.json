@@ -18,22 +18,22 @@
   },
   "homepage": "https://gitlab.com/arti__911/ais#readme",
   "devDependencies": {
-    "eslint": "^6.1.0",
+    "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.0.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-node": "^4.0.0",
-    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.18.2",
-    "pug": "^2.0.4",
+    "prettier": "^2.3.2",
+    "pug": "^3.0.2",
     "sass": "^1.22.9"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.1",
     "@prettier/plugin-pug": "^1.0.0-alpha.11",
-    "normalize.css": "^8.0.1",
-    "@fortawesome/fontawesome-free": "^5.10.1"
+    "normalize.css": "^8.0.1"
   }
 }

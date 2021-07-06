@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $parent: footer;
 
 .#{$parent} {
@@ -163,17 +165,17 @@ $parent: footer;
 
 			&::-moz-placeholder {
 				color: $color-gray;
-				font: 300 rem(14)/rem(21) $font-fira;
+				font: 300 math.div(rem(14), rem(21)) $font-fira;
 			}
 		
 			&:-ms-input-placeholder {
 				color: $color-gray;
-				font: 300 rem(14)/rem(21) $font-fira;
+				font: 300 math.div(rem(14), rem(21)) $font-fira;
 			}
 
 			&::-webkit-input-placeholder {
 				color: $color-gray;
-				font: 300 rem(14)/rem(21) $font-fira;
+				font: 300 math.div(rem(14), rem(21)) $font-fira;
 			}
 		}
 	}
